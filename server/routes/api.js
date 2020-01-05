@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const article = require('../models/article');
-const db ="mongodb+srv://dbUser:root@cluster0-pr5p0.mongodb.net/test?retryWrites=true&w=majority";
+const db ="[url of mongo db here ...]";
 mongoose.Promise = global.Promise;
 mongoose.connect(db,{
     useNewUrlParser: true,
